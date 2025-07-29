@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Ctibor Veleba</title>
+    <style>
+      :root {
+        --beige: #d9d5ce;
+        --light: #f2f2f2;
+        --dark: #333;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: sans-serif;
+        color: var(--dark);
+        background: white;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      header {
+        background: var(--beige);
+        padding: 10rem 0 7rem;
+      }
+
+      header .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: relative;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      header p {
+        font-size: 1.25rem;
+      }
+
+      nav {
+        position: absolute;
+        top: 2rem;
+        right: 40px;
+        display: flex;
+        gap: 2rem;
+      }
+
+      nav a {
+        color: var(--dark);
+        text-decoration: none;
+        font-size: 1rem;
+      }
+
+      .intro {
+        background: var(--beige);
+        padding: 2rem 0;
+        font-style: italic;
+        text-align: right;
+      }
+
+      .intro .container {
+        font-size: 1.1rem;
+      }
+
+      section {
+        padding: 7rem 0;
+      }
+
+      .grid-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+      }
+
+      .light-block,
+      .beige-block {
+        padding: 8rem 0;
+      }
+
+      .light-block {
+        background: var(--light);
+      }
+
+      .beige-block {
+        background: var(--beige);
+      }
+
+      .section-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .grid-section img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .portfolio-grid > div {
+        background: var(--light);
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .portfolio-grid img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto 1rem;
+        border-radius: 6px;
+      }
+
+      .portfolio-grid p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+
+      .cta-section {
+        background: #c7c3bb;
+        text-align: center;
+        padding: 6rem 0;
+      }
+
+      .cta-section .btn {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        background: var(--dark);
+        color: white;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+      }
+
+      footer {
+        background: #444;
+        color: white;
+        padding: 10rem 0;
+        text-align: center;
+      }
+
+      footer h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .socials {
+        margin-top: 1.5rem;
+      }
+
+      .socials button {
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        background: white;
+        color: #333;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Ctibor Veleba</h1>
+        <p>UI/UX & Grafický designér</p>
+        <nav>
+          <a href="#about">O mně</a>
+          <a href="#uiux">UI/UX design</a>
+          <a href="#graficky">Grafický design</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="intro">
+      <div class="container">
+        „Vítejte na mém portfoliu – místě, kde se kreativita setkává s
+        funkčností.“
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h3 class="section-title">O mně</h3>
+        <p>
+          Ahoj, jmenuji se Ctibor Veleba, jsem juniorní UI/UX a grafický
+          designér. Věřím, že kvalitní design vzniká spojením estetiky,
+          funkčnosti a empatie. Pro mě není design jen o tom, jak věci vypadají,
+          ale hlavně o tom, jak fungují. Klíčem k dobře navrženému produktu je
+          hluboké porozumění uživatelům – jejich potřebám, očekáváním a emocím.
+          Proto se při práci vždy snažím přemýšlet jako uživatel. Kladu si
+          otázky: Co zde hledám? Jak se cítím? Co mě motivuje pokračovat dál?
+        </p>
+        <p>
+          Kreativní myšlení je pro mě základ. Pomáhá mi nacházet nová řešení a
+          dívat se na problémy z různých úhlů. Zároveň si ale uvědomuji
+          důležitost struktury a procesu. UX není jen o nápadech, ale i o
+          testování, iteraci a schopnosti naslouchat zpětné vazbě. Pracuji s
+          nástroji jako Figma, Adobe XD a při navrhování prototypů se vždy
+          snažím o co největší přehlednost, srozumitelnost a vizuální čistotu.
+        </p>
+      </div>
+    </section>
+
+    <section id="uiux" class="light-block">
+      <div class="container grid-section">
+        <div>
+          <h3 class="section-title">UI/UX Design</h3>
+          <p>
+            Na UI/UX designu mě nejvíc baví vizuální stránka – práce s barvami,
+            typografií a kompozicí. Věřím, že první dojem rozhoduje, a proto
+            kladu důraz na čistý, přehledný a estetický design. Moje silná
+            stránka je vizuální cit a schopnost vytvořit rozhraní, která jsou
+            nejen funkční, ale i vizuálně působivá a zapamatovatelná.
+          </p>
+        </div>
+        <div><img src="uiux-design.jpg" alt="UI/UX Design" /></div>
+      </div>
+    </section>
+
+    <section id="graficky" class="beige-block">
+      <div class="container grid-section">
+        <div>
+          <h3 class="section-title">Grafický design</h3>
+          <p>
+            Grafický design je pro mě přirozený způsob vizuální komunikace.
+            Zaměřuji se na čistotu, estetiku a konzistenci značky. Díky mým
+            zkušenostem s tiskem i digitálními médii dokážu vytvořit vizuály,
+            které jsou nejen líbivé, ale i funkční.
+          </p>
+        </div>
+        <div><img src="graficky-design.jpg" alt="Grafický Design" /></div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h3 class="section-title">Portfolio</h3>
+        <div class="portfolio-grid">
+          <div>
+            <img src="work1.jpg" alt="Ukázka práce 1" />
+            <p>Reklamní banner</p>
+          </div>
+          <div>
+            <img src="work2.jpg" alt="Ukázka práce 2" />
+            <p>Editorial</p>
+          </div>
+          <div>
+            <img src="work5.jpg" alt="Ukázka práce 5" />
+            <p>Sociální sítě</p>
+          </div>
+          <div>
+            <img src="work6.jpg" alt="Ukázka práce 6" />
+            <p>Návrh loga</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h3 class="section-title">Máte zájem o spolupráci?</h3>
+        <a href="#kontakt" class="btn">Kontaktujte mě</a>
+      </div>
+    </section>
+
+    <footer id="kontakt">
+      <div class="container">
+        <h3>Kontakt</h3>
+        <p>Tel: +420 702 707 696</p>
+        <p>Email: veleba.ctibor@email.cz</p>
+        <div class="socials">
+          <button>LinkedIn</button>
+          <button>Email</button>
+          <button>GitHub</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
